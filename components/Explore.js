@@ -461,7 +461,7 @@ export default function Explore() {
             ))}
           </select>
         </div>
-        <div className="xl:container xl:mx-auto mt-36 relative">
+        <div className="xl:container xl:mx-auto mt-36 relative flex flex-col items-center">
           <img src="/images/left-arrow.svg" className="hidden xl:block absolute top-1/2 left-0 w-10 h-10"></img>
           <img src="/images/right-arrow.svg" className="hidden xl:block absolute top-1/2  right-0 w-10 h-10"></img>
           <div className="text-5xl text-center font-bold">Explore Our Offerings</div>
@@ -486,12 +486,17 @@ export default function Explore() {
             <div>{uiState === "Three" && <TabThree />}</div>
             <div>{uiState === "Four" && <TabFour />}</div>
           </div>
-          <div className="flex justify-end capitalize mt-10 mx-8 xl:mx-0">
+          <div className="flex justify-end capitalize mt-10 mx-8 xl:mx-0 self-end">
             <h5 className="border-b-2 border-blue-500">All our courses</h5>
           </div>
-          {/* <ul className="nav-dots flex justify-between">
-            <li className="h-5 w-5 bg-blue-300"></li>
-          </ul> */}
+          <ul className="nav-dots flex justify-between items-center space-x-6 mt-16">
+            <img src="/images/left-arrow.svg" className="w-5 h-5 xl:hidden"></img>
+            <li className="h-3 w-3 bg-blue-500 rounded-full active"></li>
+            <li className="h-3 w-3 bg-blue-200 rounded-full"></li>
+            <li className="h-3 w-3 bg-blue-200 rounded-full"></li>
+            <li className="h-3 w-3 bg-blue-200 rounded-full"></li>
+            <img src="/images/right-arrow.svg" className="w-5 h-5 xl:hidden"></img>
+          </ul>
         </div>
       </div>
     </div>
